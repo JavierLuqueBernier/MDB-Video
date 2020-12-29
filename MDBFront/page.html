@@ -103,7 +103,7 @@
         margin: 70px 0px;
         padding-bottom: 10px;
     }
-    .carousel__item {
+    .caruosel-item {
         width: 200px;
         height: 250px;
         border-radius: 20px;
@@ -119,20 +119,20 @@
         /*  1.- Desplaza los elementos hacia la derecha
             2.- ~ Selecciona todos los elementos excepto el elemento que está seleccionado */
 
-    .carousel__item:hover ~ .carousel__item{
+    .caruosel-item:hover ~ .caruosel-item{
         transform: translate3d(100px, 0, 0);
     }
 
         /* 1.- Opacidad que deben tener los elementos al hacer hover sobre el container del carousel */
 
-    .carousel__container:hover .carousel__item{
+    .carousel__container:hover .caruosel-item{
         opacity: 0.3;
     }
 
         /*  1.- Escala en 1.5 la imagen seleccionada
             2.- Cuando se le haga hover a un elemento especīfico, pone la opacidad en 1. */
 
-    .carousel__container:hover .carousel__item:hover {
+    .carousel__container:hover .caruosel-item:hover {
         transform: scale(1.5);
         opacity: 1;
     }
@@ -159,19 +159,28 @@
         <input class="input" type="text" placeholder="Buscar...">
         <section class="carousel">
             <div class="carousel__container">
-                <div class="carousel__item">
+                <div class="caruosel-item">
+                    <img class="carousel-item__img" src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-20-posters-de-peliculas-mas-creativos/cisne-negro/7055592-1-esl-ES/CISNE-NEGRO.jpg?resize=980:*" alt="cartel">
+                    <div class="carousel-item__details">
+                        <div>
+                            <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="play"/>
+                            <img src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="plus"/>
+                        </div>
+                        <p class="carousel-item__details--title">Título provisional</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114 min</p>
+                    </div>
+                    
+                </div>
+                <div class="caruosel-item">
 
                 </div>
-                <div class="carousel__item">
+                <div class="caruosel-item">
 
                 </div>
-                <div class="carousel__item">
+                <div class="caruosel-item">
 
                 </div>
-                <div class="carousel__item">
-
-                </div>
-                <div class="carousel__item">
+                <div class="caruosel-item">
 
                 </div>
             </div>
