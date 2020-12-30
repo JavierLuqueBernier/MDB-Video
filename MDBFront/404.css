@@ -18,6 +18,31 @@ body {
 
 /* Hasta aquí el header */
 
+.notfound{
+    background: linear-gradient(#21C08B,#AB88FF);
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    padding-top:200px;
+    box-sizing: border-box;
+    
+}
+
+.notfound h1 {
+    font-size: 100px;
+    font-weight: bold;
+    transition: 450ms all;
+    animation: pulse 2s infinite linear;
+}
+
+@keyframes pulse {
+    0%{ transform: scale(1); }
+    50%{ transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 /* A partir de aquí el footer */
 
 .footer {
