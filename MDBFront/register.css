@@ -45,7 +45,9 @@ body{
 }
 
 .login__container--register {
-    font-size: 14px;  
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
 }
 .login__container--register a{
     font-size: 16px;
